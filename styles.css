@@ -1,0 +1,128 @@
+/* styles.css */
+
+#map {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling on the entire page */
+}
+
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  overflow: hidden;
+  font-family: Roboto;
+  padding: 0.5em;
+}
+
+/* Use unique IDs for styling */
+#pac-container-1,
+#pac-container-2,
+#pac-container-3,
+#pac-container-4 {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* Use unique IDs for styling */
+#pac-input-1,
+#pac-input-2,
+#pac-input-3,
+#pac-input-4 {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+/* Use unique IDs for styling */
+#pac-input-1:focus,
+#pac-input-2:focus,
+#pac-input-3:focus,
+#pac-input-4:focus {
+  border-color: #4d90fe;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#start-button {
+  margin-left: 12px;
+}
+
+/* Add basic styling for the info bar */
+#info-bar {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f8f9fa;
+  padding: 15px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enable vertical scrolling for the info bar */
+}
+
+.info-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.info-section h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.info-section p {
+  margin: 5px 0;
+  font-size: 14px;
+}

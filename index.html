@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place Autocomplete</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- autocomplete search-->
+    <div class="pac-card" id="pac-card">
+      <div>
+        <div id="title">Project</div>
+      </div>
+
+      <!-- input boxes with unique IDs -->
+      <br />
+      <div id="pac-container-1">
+        <input id="pac-input-1" type="text" placeholder="Enter starting location 1"/>
+      </div>
+      <div id="pac-container-2">
+        <input id="pac-input-2" type="text" placeholder="Enter starting location 2"/>
+      </div>
+      <div id="pac-container-3">
+        <input id="pac-input-3" type="text" placeholder="Enter starting location 3" />
+      </div>
+      <div id="pac-container-4">
+        <input id="pac-input-4" type="text" placeholder="Enter destination" />
+      </div>
+      <div id="pac-container-4">
+        <button id="start-button">Start</button>
+      </div>
+    </div>
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
+    </div>
+  
+    <!-- Info bar for travel summary -->
+    <div id="info-bar">
+      <div id="info-section-1" class="info-section">
+        <h3 id="info-heading-1">Starting Location 1</h3>
+        <p id="info-content-1">No data available</p>
+      </div>
+      <div id="info-section-2" class="info-section">
+        <h3 id="info-heading-2">Starting Location 2</h3>
+        <p id="info-content-2">No data available</p>
+      </div>
+      <div id="info-section-3" class="info-section">
+        <h3 id="info-heading-3">Starting Location 3</h3>
+        <p id="info-content-3">No data available</p>
+      </div>
+    </div>
+
+    <!-- Include JavaScript files in the correct order -->
+    <script src="locations.js"></script>
+    <script src="actions.js"></script>
+    <script src="index.js"></script>
+
+    <!-- Google Maps API scripts -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvrA8AMvoMQ-Dat3mq4k20t5RxgL5BANo&callback=initMap&libraries=places,distance_matrix"
+      async
+      defer
+    ></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </body>
+</html>
